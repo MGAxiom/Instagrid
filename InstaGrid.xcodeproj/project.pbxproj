@@ -10,9 +10,13 @@
 		8981FA79295CB8CF00F3E40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FA78295CB8CF00F3E40D /* AppDelegate.swift */; };
 		8981FA7B295CB8CF00F3E40D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FA7A295CB8CF00F3E40D /* SceneDelegate.swift */; };
 		8981FA7D295CB8CF00F3E40D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FA7C295CB8CF00F3E40D /* ViewController.swift */; };
-		8981FA80295CB8CF00F3E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA7E295CB8CF00F3E40D /* Main.storyboard */; };
 		8981FA82295CB8CF00F3E40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA81295CB8CF00F3E40D /* Assets.xcassets */; };
 		8981FA85295CB8CF00F3E40D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA83295CB8CF00F3E40D /* LaunchScreen.storyboard */; };
+		8981FA91295CB93500F3E40D /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA90295CB93500F3E40D /* ThirstySoftRegular.otf */; };
+		8981FA93295CB93B00F3E40D /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA92295CB93B00F3E40D /* Delm-Medium.otf */; };
+		8981FA98295CC01600F3E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA96295CC01600F3E40D /* Main.storyboard */; };
+		8981FA9A295DF97600F3E40D /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FA99295DF97600F3E40D /* CollectionView.swift */; };
+		8981FA9C295E2BFD00F3E40D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FA9B295E2BFD00F3E40D /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,14 @@
 		8981FA78295CB8CF00F3E40D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8981FA7A295CB8CF00F3E40D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8981FA7C295CB8CF00F3E40D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8981FA7F295CB8CF00F3E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8981FA81295CB8CF00F3E40D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8981FA84295CB8CF00F3E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8981FA86295CB8CF00F3E40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8981FA90295CB93500F3E40D /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		8981FA92295CB93B00F3E40D /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
+		8981FA97295CC01600F3E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8981FA99295DF97600F3E40D /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionView.swift; path = InstaGrid/CollectionView.swift; sourceTree = SOURCE_ROOT; };
+		8981FA9B295E2BFD00F3E40D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		8981FA77295CB8CF00F3E40D /* InstaGrid */ = {
 			isa = PBXGroup;
 			children = (
-				8981FA78295CB8CF00F3E40D /* AppDelegate.swift */,
-				8981FA7A295CB8CF00F3E40D /* SceneDelegate.swift */,
-				8981FA7C295CB8CF00F3E40D /* ViewController.swift */,
-				8981FA7E295CB8CF00F3E40D /* Main.storyboard */,
-				8981FA81295CB8CF00F3E40D /* Assets.xcassets */,
-				8981FA83295CB8CF00F3E40D /* LaunchScreen.storyboard */,
-				8981FA86295CB8CF00F3E40D /* Info.plist */,
+				8981FA8F295CB91100F3E40D /* Model */,
+				8981FA8E295CB90300F3E40D /* View */,
+				8981FA8D295CB8F900F3E40D /* Controller */,
+				8981FA8C295CB8D900F3E40D /* Supporting Files */,
 			);
 			path = InstaGrid;
+			sourceTree = "<group>";
+		};
+		8981FA8C295CB8D900F3E40D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8981FA81295CB8CF00F3E40D /* Assets.xcassets */,
+				8981FA86295CB8CF00F3E40D /* Info.plist */,
+				8981FA7A295CB8CF00F3E40D /* SceneDelegate.swift */,
+				8981FA78295CB8CF00F3E40D /* AppDelegate.swift */,
+				8981FA83295CB8CF00F3E40D /* LaunchScreen.storyboard */,
+				8981FA90295CB93500F3E40D /* ThirstySoftRegular.otf */,
+				8981FA92295CB93B00F3E40D /* Delm-Medium.otf */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8981FA8D295CB8F900F3E40D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8981FA7C295CB8CF00F3E40D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8981FA8E295CB90300F3E40D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8981FA96295CC01600F3E40D /* Main.storyboard */,
+				8981FA9B295E2BFD00F3E40D /* GridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8981FA8F295CB91100F3E40D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8981FA99295DF97600F3E40D /* CollectionView.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8981FA85295CB8CF00F3E40D /* LaunchScreen.storyboard in Resources */,
+				8981FA98295CC01600F3E40D /* Main.storyboard in Resources */,
+				8981FA93295CB93B00F3E40D /* Delm-Medium.otf in Resources */,
 				8981FA82295CB8CF00F3E40D /* Assets.xcassets in Resources */,
-				8981FA80295CB8CF00F3E40D /* Main.storyboard in Resources */,
+				8981FA91295CB93500F3E40D /* ThirstySoftRegular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +186,8 @@
 			files = (
 				8981FA7D295CB8CF00F3E40D /* ViewController.swift in Sources */,
 				8981FA79295CB8CF00F3E40D /* AppDelegate.swift in Sources */,
+				8981FA9A295DF97600F3E40D /* CollectionView.swift in Sources */,
+				8981FA9C295E2BFD00F3E40D /* GridView.swift in Sources */,
 				8981FA7B295CB8CF00F3E40D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,20 +195,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8981FA7E295CB8CF00F3E40D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8981FA7F295CB8CF00F3E40D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8981FA83295CB8CF00F3E40D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8981FA84295CB8CF00F3E40D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8981FA96295CC01600F3E40D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8981FA97295CC01600F3E40D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,10 +336,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstaGrid/Info.plist;
+				INFOPLIST_FILE = "/Users/maximegirard/Documents/Projets OpenClassroom/Projet 4 - InstaGrid/InstaGrid/InstaGrid/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,7 +352,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,10 +364,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstaGrid/Info.plist;
+				INFOPLIST_FILE = "/Users/maximegirard/Documents/Projets OpenClassroom/Projet 4 - InstaGrid/InstaGrid/InstaGrid/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
