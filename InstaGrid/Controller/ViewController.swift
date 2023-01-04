@@ -9,19 +9,41 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var presetButtonsViews: [UIView]!
     @IBOutlet var presetButtons: [UIButton]!
     @IBOutlet var buttonTouchedIndicator: [UIImageView]!
     @IBOutlet weak var swipeLabel: UILabel!
     @IBOutlet weak var gridView: GridView!
     
     
-    @IBAction func didTapButton() {
+    @IBAction func didTapPresetButton(_ sender: UIButton) {
         changeGridPreset()
+        switch sender.tag {
+        case 0:
+            break
+        case 1:
+            break
+        case 2:
+            break
+        default:
+            break
+        }
     }
     
     private func changeGridPreset() {
+
+    }
+    
+    
+    @IBAction func didTapGridButton(_ : UIButton) {
+        addPictureToLayout()
+    }
+    
+    private func addPictureToLayout() {
         
     }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

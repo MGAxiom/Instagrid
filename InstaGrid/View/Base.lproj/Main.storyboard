@@ -38,7 +38,7 @@
                                         <rect key="frame" x="30" y="47" width="333" height="712"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ei1-D6-bWH">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="64.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="63"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="c9P-Mg-AZF">
                                                         <rect key="frame" x="156.66666666666666" y="0.0" width="20" height="20"/>
@@ -49,7 +49,7 @@
                                                         <variation key="heightClass=compact" image="Arrow Left"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spp-pp-9Oc">
-                                                        <rect key="frame" x="61.666666666666686" y="34" width="210" height="30.333333333333329"/>
+                                                        <rect key="frame" x="86.333333333333329" y="34" width="160.33333333333337" height="29"/>
                                                         <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="26"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                                                 <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4m-wh-p5g">
-                                                <rect key="frame" x="0.0" y="181.33333333333331" width="333" height="332.99999999999994"/>
+                                                <rect key="frame" x="0.0" y="181" width="333" height="333"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="hDY-FG-sMD">
                                                         <rect key="frame" x="15" y="15" width="303" height="303"/>
@@ -83,6 +83,9 @@
                                                                                 <buttonConfiguration key="configuration" style="plain">
                                                                                     <backgroundConfiguration key="background" image="Plus"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttY-iu-w5H"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kxs-rV-7y1">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="144" height="146"/>
@@ -112,6 +115,9 @@
                                                                                 <buttonConfiguration key="configuration" style="plain">
                                                                                     <backgroundConfiguration key="background" image="Plus"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thF-v2-dSk"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4j-f0-6Zx">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="144" height="146"/>
@@ -144,6 +150,9 @@
                                                                                 <buttonConfiguration key="configuration" style="plain">
                                                                                     <backgroundConfiguration key="background" image="Plus"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g82-v5-Pll"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -174,7 +183,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="303" height="146"/>
                                                                             </imageView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfI-Sg-daw">
-                                                                                <rect key="frame" x="136.66666666666666" y="58.000000000000057" width="30" height="30"/>
+                                                                                <rect key="frame" x="136.66666666666666" y="58" width="30" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="30" id="9oR-bv-pRL"/>
                                                                                     <constraint firstAttribute="width" constant="30" id="Ehe-Kp-sEo"/>
@@ -184,6 +193,9 @@
                                                                                 <buttonConfiguration key="configuration" style="plain">
                                                                                     <backgroundConfiguration key="background" image="Plus"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJf-g2-VxN"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -203,7 +215,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="146"/>
                                                                             </imageView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcP-D4-l1X">
-                                                                                <rect key="frame" x="-15" y="58.000000000000057" width="30" height="30"/>
+                                                                                <rect key="frame" x="-15" y="58" width="30" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="30" id="6Cn-jg-Bsn"/>
                                                                                     <constraint firstAttribute="width" secondItem="qcP-D4-l1X" secondAttribute="height" multiplier="1:1" id="Cdb-jV-Rq7"/>
@@ -213,6 +225,9 @@
                                                                                 <buttonConfiguration key="configuration" style="plain">
                                                                                     <backgroundConfiguration key="background" image="Plus"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mNW-SU-EcJ"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -232,7 +247,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="146"/>
                                                                             </imageView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV2-Z2-mRp">
-                                                                                <rect key="frame" x="-15" y="58.000000000000057" width="30" height="30"/>
+                                                                                <rect key="frame" x="-15" y="58" width="30" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="30" id="6Mn-n2-Mv7"/>
                                                                                     <constraint firstAttribute="height" constant="30" id="OIc-uR-kHx"/>
@@ -242,6 +257,9 @@
                                                                                 <buttonConfiguration key="configuration" style="plain">
                                                                                     <backgroundConfiguration key="background" image="Plus"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="axL-Wd-PvE"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -287,8 +305,7 @@
                                                                     <backgroundConfiguration key="background" image="Layout 1"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLM-ua-h8h"/>
-                                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ev2-mw-g69"/>
+                                                                    <action selector="didTapPresetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3c-lH-5p1"/>
                                                                 </connections>
                                                             </button>
                                                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Selected" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-ci-W8s">
@@ -307,7 +324,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="TvK-8G-pbx" secondAttribute="trailing" id="tdS-Ua-74h"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0h-ZD-gxc">
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0h-ZD-gxc">
                                                         <rect key="frame" x="117.66666666666666" y="0.0" width="97.666666666666657" height="97.666666666666671"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brk-fE-8dU">
@@ -317,8 +334,7 @@
                                                                     <backgroundConfiguration key="background" image="Layout 2"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVo-qo-wJ3"/>
-                                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Le-cq-hOu"/>
+                                                                    <action selector="didTapPresetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YT-S1-u7z"/>
                                                                 </connections>
                                                             </button>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Selected" translatesAutoresizingMaskIntoConstraints="NO" id="khX-FU-fyE">
@@ -337,7 +353,7 @@
                                                             <constraint firstAttribute="width" secondItem="R0h-ZD-gxc" secondAttribute="height" multiplier="1:1" id="vhL-t1-crg"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNw-2K-Ozj">
+                                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNw-2K-Ozj">
                                                         <rect key="frame" x="235.33333333333329" y="0.0" width="97.666666666666657" height="97.666666666666671"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0n-uD-Sfi">
@@ -347,8 +363,7 @@
                                                                     <backgroundConfiguration key="background" image="Layout 3"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3K-qY-dry"/>
-                                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="okp-0t-jXh"/>
+                                                                    <action selector="didTapPresetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAW-Bc-wSY"/>
                                                                 </connections>
                                                             </button>
                                                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Selected" translatesAutoresizingMaskIntoConstraints="NO" id="b4t-g1-zKX">
@@ -430,6 +445,9 @@
                         <outletCollection property="presetButtons" destination="brk-fE-8dU" collectionClass="NSMutableArray" id="gUP-Qf-ca0"/>
                         <outletCollection property="buttonTouchedIndicator" destination="b4t-g1-zKX" collectionClass="NSMutableArray" id="uAX-Ge-FfO"/>
                         <outletCollection property="presetButtons" destination="f0n-uD-Sfi" collectionClass="NSMutableArray" id="JUn-Kp-Tue"/>
+                        <outletCollection property="presetButtonsViews" destination="2N9-hJ-DjM" collectionClass="NSMutableArray" id="yjX-sz-dUk"/>
+                        <outletCollection property="presetButtonsViews" destination="R0h-ZD-gxc" collectionClass="NSMutableArray" id="iYl-dC-x2C"/>
+                        <outletCollection property="presetButtonsViews" destination="yNw-2K-Ozj" collectionClass="NSMutableArray" id="suQ-Hg-Ovs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
