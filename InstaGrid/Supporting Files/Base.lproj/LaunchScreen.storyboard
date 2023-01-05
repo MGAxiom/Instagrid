@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,20 +12,32 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="64f-NN-0KA">
-                                <rect key="frame" x="97" y="360" width="199" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="64f-NN-0KA">
+                                <rect key="frame" x="130" y="381" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="7S9-1J-mEu"/>
+                                    <constraint firstAttribute="width" secondItem="64f-NN-0KA" secondAttribute="height" multiplier="1:1" id="8x3-Yn-rnt"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Instagrid" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-VO-bcI">
-                                <rect key="frame" x="103" y="260" width="186" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagrid" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-VO-bcI">
+                                <rect key="frame" x="90" y="326" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7bn-K7-Ghh"/>
+                                    <constraint firstAttribute="width" constant="250" id="ez8-Uh-3ll"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.75404554609999996" green="0.8632925749" blue="0.91398912669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="64f-NN-0KA" firstAttribute="top" secondItem="LGf-VO-bcI" secondAttribute="bottom" constant="5" id="7jM-8F-My9"/>
+                            <constraint firstItem="LGf-VO-bcI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8rh-nZ-iOJ"/>
+                            <constraint firstItem="64f-NN-0KA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DXB-Pe-6aO"/>
+                            <constraint firstItem="64f-NN-0KA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="S2r-KO-amT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
