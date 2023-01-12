@@ -39,6 +39,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="117.5" height="117.5"/>
                                                                 <state key="normal" image="Plus"/>
                                                                 <state key="selected" image="UIImageView"/>
+                                                                <state key="highlighted" image="UIImageView"/>
                                                                 <connections>
                                                                     <action selector="didTapGridButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0u-XB-0cJ"/>
                                                                 </connections>
@@ -291,7 +292,6 @@
                             <constraint firstItem="Spp-pp-9Oc" firstAttribute="trailing" secondItem="Y4m-wh-p5g" secondAttribute="leading" constant="-10" id="6Z8-9T-2tN"/>
                             <constraint firstItem="HBb-R1-tJg" firstAttribute="trailing" secondItem="GdY-19-0yG" secondAttribute="trailing" id="7hL-pu-WDv"/>
                             <constraint firstItem="dhe-cS-UGw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="88K-Tt-okh"/>
-                            <constraint firstItem="GdY-19-0yG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANL-dL-yhF"/>
                             <constraint firstItem="HBb-R1-tJg" firstAttribute="trailing" secondItem="dhe-cS-UGw" secondAttribute="trailing" constant="20" id="BgL-N4-sXF"/>
                             <constraint firstItem="HBb-R1-tJg" firstAttribute="bottom" secondItem="dhe-cS-UGw" secondAttribute="bottom" constant="20" id="Hdd-uH-pmc"/>
                             <constraint firstItem="GdY-19-0yG" firstAttribute="leading" secondItem="HBb-R1-tJg" secondAttribute="leading" id="HuF-33-TrM"/>
@@ -358,25 +358,21 @@
                     </view>
                     <connections>
                         <outlet property="gridView" destination="Y4m-wh-p5g" id="YoC-se-aCj"/>
-                        <outlet property="swipeLabel" destination="Spp-pp-9Oc" id="0fW-Vi-bJ9"/>
                         <outletCollection property="presetButtons" destination="f0n-uD-Sfi" collectionClass="NSMutableArray" id="JUn-Kp-Tue"/>
-                        <outletCollection property="presetButtonsViews" destination="R0h-ZD-gxc" collectionClass="NSMutableArray" id="iYl-dC-x2C"/>
-                        <outletCollection property="presetButtonsViews" destination="2N9-hJ-DjM" collectionClass="NSMutableArray" id="yjX-sz-dUk"/>
                         <outletCollection property="presetButtons" destination="TvK-8G-pbx" collectionClass="NSMutableArray" id="LXL-5l-Xno"/>
                         <outletCollection property="presetButtons" destination="brk-fE-8dU" collectionClass="NSMutableArray" id="gUP-Qf-ca0"/>
-                        <outletCollection property="presetButtonsViews" destination="yNw-2K-Ozj" collectionClass="NSMutableArray" id="suQ-Hg-Ovs"/>
                         <outletCollection property="presetViews" destination="qBf-zC-GkJ" collectionClass="NSMutableArray" id="rDp-nH-hYr"/>
                         <outletCollection property="presetViews" destination="a9c-ez-dnE" collectionClass="NSMutableArray" id="F32-bj-y7w"/>
                         <outletCollection property="presetViews" destination="dt0-N7-NLM" collectionClass="NSMutableArray" id="NW0-NJ-69K"/>
                         <outletCollection property="presetViews" destination="ys1-Eh-dHG" collectionClass="NSMutableArray" id="atK-a0-sOk"/>
                         <outletCollection property="presetViews" destination="jE4-m8-Q4J" collectionClass="NSMutableArray" id="X1G-jv-LJn"/>
                         <outletCollection property="presetViews" destination="bII-OI-6U4" collectionClass="NSMutableArray" id="Yh3-PH-43q"/>
-                        <outletCollection property="gridButtons" destination="5g7-wi-4ER" collectionClass="NSMutableArray" id="D1K-cs-u1n"/>
-                        <outletCollection property="gridButtons" destination="Jkc-oM-vI9" collectionClass="NSMutableArray" id="OsA-d9-vcy"/>
-                        <outletCollection property="gridButtons" destination="AGL-9V-ES0" collectionClass="NSMutableArray" id="f4P-QQ-c4f"/>
-                        <outletCollection property="gridButtons" destination="qfI-Sg-daw" collectionClass="NSMutableArray" id="1nr-s2-xKz"/>
-                        <outletCollection property="gridButtons" destination="qcP-D4-l1X" collectionClass="NSMutableArray" id="cch-RQ-4sg"/>
-                        <outletCollection property="gridButtons" destination="YV2-Z2-mRp" collectionClass="NSMutableArray" id="ev0-BE-7Sr"/>
+                        <outletCollection property="gridButtons" destination="5g7-wi-4ER" collectionClass="NSMutableArray" id="hBK-Bm-111"/>
+                        <outletCollection property="gridButtons" destination="Jkc-oM-vI9" collectionClass="NSMutableArray" id="eZC-Qh-5U6"/>
+                        <outletCollection property="gridButtons" destination="AGL-9V-ES0" collectionClass="NSMutableArray" id="1pV-Pb-9ba"/>
+                        <outletCollection property="gridButtons" destination="qfI-Sg-daw" collectionClass="NSMutableArray" id="WQv-8R-6VB"/>
+                        <outletCollection property="gridButtons" destination="qcP-D4-l1X" collectionClass="NSMutableArray" id="AqE-cO-ML6"/>
+                        <outletCollection property="gridButtons" destination="YV2-Z2-mRp" collectionClass="NSMutableArray" id="90M-Ab-RXy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

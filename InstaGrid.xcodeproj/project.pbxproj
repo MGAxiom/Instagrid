@@ -15,7 +15,6 @@
 		8981FA91295CB93500F3E40D /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA90295CB93500F3E40D /* ThirstySoftRegular.otf */; };
 		8981FA93295CB93B00F3E40D /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA92295CB93B00F3E40D /* Delm-Medium.otf */; };
 		8981FA98295CC01600F3E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA96295CC01600F3E40D /* Main.storyboard */; };
-		8981FA9A295DF97600F3E40D /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FA99295DF97600F3E40D /* CollectionView.swift */; };
 		8981FA9C295E2BFD00F3E40D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FA9B295E2BFD00F3E40D /* GridView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		8981FA90295CB93500F3E40D /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		8981FA92295CB93B00F3E40D /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		8981FA97295CC01600F3E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8981FA99295DF97600F3E40D /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionView.swift; path = InstaGrid/CollectionView.swift; sourceTree = SOURCE_ROOT; };
 		8981FA9B295E2BFD00F3E40D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 		8981FA77295CB8CF00F3E40D /* InstaGrid */ = {
 			isa = PBXGroup;
 			children = (
-				8981FA8F295CB91100F3E40D /* Model */,
 				8981FA8E295CB90300F3E40D /* View */,
 				8981FA8D295CB8F900F3E40D /* Controller */,
 				8981FA8C295CB8D900F3E40D /* Supporting Files */,
@@ -101,14 +98,6 @@
 				8981FA9B295E2BFD00F3E40D /* GridView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		8981FA8F295CB91100F3E40D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8981FA99295DF97600F3E40D /* CollectionView.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +175,6 @@
 			files = (
 				8981FA7D295CB8CF00F3E40D /* ViewController.swift in Sources */,
 				8981FA79295CB8CF00F3E40D /* AppDelegate.swift in Sources */,
-				8981FA9A295DF97600F3E40D /* CollectionView.swift in Sources */,
 				8981FA9C295E2BFD00F3E40D /* GridView.swift in Sources */,
 				8981FA7B295CB8CF00F3E40D /* SceneDelegate.swift in Sources */,
 			);

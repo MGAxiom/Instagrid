@@ -9,12 +9,11 @@ import UIKit
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet var presetButtonsViews: [UIView]!
     @IBOutlet var presetButtons: [UIButton]!
-    @IBOutlet weak var swipeLabel: UILabel!
     @IBOutlet weak var gridView: GridView!
     @IBOutlet var presetViews: [UIView]!
     @IBOutlet var gridButtons: [UIButton]!
+    
     
     var swipeGesture: UISwipeGestureRecognizer = UISwipeGestureRecognizer()
     
@@ -48,22 +47,24 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     }
     
     private func changeGridPreset(_ sender: UIButton) {
+        let presetOne = [view.viewWithTag(103), view.viewWithTag(104), view.viewWithTag(201)]
+        let presetTwo = [view.viewWithTag(101), view.viewWithTag(102), view.viewWithTag(202)]
+        let presetThree = [view.viewWithTag(101), view.viewWithTag(102), view.viewWithTag(103), view.viewWithTag(104)]
         if sender.tag == 5 {
             resetViews()
-            view.viewWithTag(103)?.isHidden = false
-            view.viewWithTag(104)?.isHidden = false
-            view.viewWithTag(201)?.isHidden = false
+            presetOne.forEach { view in
+                view?.isHidden = false
+            }
         } else if sender.tag == 6 {
             resetViews()
-            view.viewWithTag(101)?.isHidden = false
-            view.viewWithTag(102)?.isHidden = false
-            view.viewWithTag(202)?.isHidden = false
+            presetTwo.forEach { view in
+                view?.isHidden = false
+            }
         } else if sender.tag == 7 {
             resetViews()
-            view.viewWithTag(101)?.isHidden = false
-            view.viewWithTag(102)?.isHidden = false
-            view.viewWithTag(103)?.isHidden = false
-            view.viewWithTag(104)?.isHidden = false
+            presetThree.forEach { view in
+                view?.isHidden = false
+            }
         }
     }
     
@@ -90,6 +91,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
         swipeGesture.addTarget(self, action: #selector(swipePresetView(_:)))
         gridView.addGestureRecognizer(swipeGesture)
         
+        
     }
     
     //Checks orientation at start
@@ -101,10 +103,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     
     func determineMyDeviceOrientation() {
         if UIDevice.current.orientation.isLandscape {
-            isLandscape = true
             isPortrait = false
         } else if UIDevice.current.orientation.isPortrait {
-            isPortrait = true
             isLandscape = false
         } else if UIDevice.current.orientation == .unknown {
             if let orientation = self.view.window?.windowScene?.interfaceOrientation {
@@ -155,14 +155,17 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
             }
             activityViewController.completionWithItemsHandler = { (activityType: UIActivity.ActivityType?, completed:
                                                                     Bool, arrayReturnedItems: [Any]?, error: Error?) in
-                if completed {
-                    swipeBack()
-                    return
-                } else {
-                    swipeBack()
-                }
+//                if completed {
+//                    swipeBack()
+//                    return
+//                } else {
+//                    swipeBack()
+//                }
                 if let shareError = error {
                     print("error while sharing: \(shareError.localizedDescription)")
+                    swipeBack()
+                } else {
+                    swipeBack()
                 }
             }
             
@@ -178,7 +181,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
         let imagePicked = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as! UIImage
         button.imageView?.contentMode = .scaleAspectFill
         button.setImage(imagePicked, for: .selected)
-        
+        button.setImage(imagePicked, for: .normal)
         
         picker.dismiss(animated: true, completion: {
             button.isSelected = true
