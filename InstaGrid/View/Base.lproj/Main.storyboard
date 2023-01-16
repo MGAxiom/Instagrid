@@ -35,8 +35,9 @@
                                                     <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBf-zC-GkJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="117.5" height="117.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g7-wi-4ER">
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g7-wi-4ER">
                                                                 <rect key="frame" x="0.0" y="0.0" width="117.5" height="117.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <state key="normal" image="Plus"/>
                                                                 <state key="selected" image="UIImageView"/>
                                                                 <state key="highlighted" image="UIImageView"/>

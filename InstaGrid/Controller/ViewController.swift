@@ -92,6 +92,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
         gridView.addGestureRecognizer(swipeGesture)
         
         
+        
+        
     }
     
     //Checks orientation at start
@@ -99,7 +101,15 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
         super.viewDidAppear(animated)
         
         determineMyDeviceOrientation()
+        
+        gridButtons.forEach { button in
+            if button.state == .normal {
+                button.imageView?.layer.transform = CATransform3DMakeScale(3.0, 3.0, 3.0)
+            }
+        }
     }
+    
+    
     
     func determineMyDeviceOrientation() {
         if UIDevice.current.orientation.isLandscape {
@@ -141,6 +151,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
         }
         
         
+        
+        
         func swipeBack() {
             UIView.animate(withDuration: 0.2, delay: 0,options: [.curveLinear], animations: {
                 self.gridView.transform = .identity
@@ -155,12 +167,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
             }
             activityViewController.completionWithItemsHandler = { (activityType: UIActivity.ActivityType?, completed:
                                                                     Bool, arrayReturnedItems: [Any]?, error: Error?) in
-//                if completed {
-//                    swipeBack()
-//                    return
-//                } else {
-//                    swipeBack()
-//                }
                 if let shareError = error {
                     print("error while sharing: \(shareError.localizedDescription)")
                     swipeBack()
@@ -182,6 +188,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
         button.imageView?.contentMode = .scaleAspectFill
         button.setImage(imagePicked, for: .selected)
         button.setImage(imagePicked, for: .normal)
+        button.imageView?.layer.transform = CATransform3DMakeScale(1.0, 1.0, 1.0)
         
         picker.dismiss(animated: true, completion: {
             button.isSelected = true
