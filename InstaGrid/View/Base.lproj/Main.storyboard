@@ -19,7 +19,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstaGrid" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GridView" customModule="InstaGrid" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -342,20 +342,6 @@
                                 <exclude reference="e2x-VS-lak"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="collectionOfViews" destination="qBf-zC-GkJ" collectionClass="NSMutableArray" id="YvJ-az-sWg"/>
-                            <outletCollection property="collectionOfButtons" destination="YV2-Z2-mRp" collectionClass="NSMutableArray" id="ObC-Ua-AZQ"/>
-                            <outletCollection property="collectionOfViews" destination="dt0-N7-NLM" collectionClass="NSMutableArray" id="pG7-40-FOT"/>
-                            <outletCollection property="collectionOfButtons" destination="qfI-Sg-daw" collectionClass="NSMutableArray" id="GMT-qp-MaX"/>
-                            <outletCollection property="collectionOfViews" destination="a9c-ez-dnE" collectionClass="NSMutableArray" id="3T1-sd-Cbu"/>
-                            <outletCollection property="collectionOfButtons" destination="Jkc-oM-vI9" collectionClass="NSMutableArray" id="OKk-AV-WSG"/>
-                            <outletCollection property="collectionOfViews" destination="ys1-Eh-dHG" collectionClass="NSMutableArray" id="VcN-Wd-MdK"/>
-                            <outletCollection property="collectionOfViews" destination="jE4-m8-Q4J" collectionClass="NSMutableArray" id="GZh-Su-qVT"/>
-                            <outletCollection property="collectionOfViews" destination="bII-OI-6U4" collectionClass="NSMutableArray" id="rc1-XK-Xc2"/>
-                            <outletCollection property="collectionOfButtons" destination="qcP-D4-l1X" collectionClass="NSMutableArray" id="1Lw-RX-Z4o"/>
-                            <outletCollection property="collectionOfButtons" destination="5g7-wi-4ER" collectionClass="NSMutableArray" id="Nik-Fe-hmj"/>
-                            <outletCollection property="collectionOfButtons" destination="AGL-9V-ES0" collectionClass="NSMutableArray" id="OW3-lj-1oU"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="gridView" destination="Y4m-wh-p5g" id="YoC-se-aCj"/>

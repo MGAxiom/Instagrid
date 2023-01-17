@@ -10,16 +10,24 @@ import UIKit
 class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var presetButtons: [UIButton]!
-    @IBOutlet weak var gridView: GridView!
+    @IBOutlet weak var gridView: UIView!
     @IBOutlet var presetViews: [UIView]!
     @IBOutlet var gridButtons: [UIButton]!
-    
+
     
     var swipeGesture: UISwipeGestureRecognizer = UISwipeGestureRecognizer()
     
     var isLandscape = false
     var isPortrait = false
     var currentGridButton: UIButton?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        swipeGesture.addTarget(self, action: #selector(swipePresetView(_:)))
+        gridView.addGestureRecognizer(swipeGesture)
+    
+    }
     
     @IBAction func didTapPresetButton(_ sender: UIButton) {
         switch sender.tag {
@@ -85,17 +93,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        swipeGesture.addTarget(self, action: #selector(swipePresetView(_:)))
-        gridView.addGestureRecognizer(swipeGesture)
-        
-        
-        
-        
-    }
-    
     //Checks orientation at start
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -112,16 +109,17 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     
     
     func determineMyDeviceOrientation() {
-        if UIDevice.current.orientation.isLandscape {
-            isPortrait = false
-        } else if UIDevice.current.orientation.isPortrait {
-            isLandscape = false
-        } else if UIDevice.current.orientation == .unknown {
+        if UIDevice.current.orientation == .unknown {
             if let orientation = self.view.window?.windowScene?.interfaceOrientation {
                 isLandscape = orientation.isLandscape
                 isPortrait = orientation.isPortrait
             }
+        } else {
+            isPortrait = UIDevice.current.orientation.isPortrait
+            isLandscape = UIDevice.current.orientation.isLandscape
         }
+        
+        
         if (isPortrait) {
             //print("Device is in portrait mode")
             swipeGesture.direction = .up
@@ -139,18 +137,16 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     
     //Functions to swipe in the right direction and back when action is completed
     @objc private func swipePresetView(_ sender: UIGestureRecognizer) {
-        
         UIView.animate(withDuration: 0.4, delay: 0.2, animations: {
-            var swipeTransform = CGAffineTransform(translationX: 0, y: -1000)
+            var swipeTransform = CGAffineTransform(translationX: 0, y: -self.gridView.frame.maxY)
             if self.isLandscape {
-                swipeTransform = CGAffineTransform(translationX: -1000, y: 0)
+                swipeTransform = CGAffineTransform(translationX: -self.gridView.frame.maxX, y: 0)
             }
             self.gridView.transform = swipeTransform
         }) { (success) in
             openActivityController()
         }
-        
-        
+
         
         
         func swipeBack() {

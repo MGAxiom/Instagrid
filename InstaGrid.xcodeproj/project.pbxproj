@@ -15,7 +15,6 @@
 		8981FA91295CB93500F3E40D /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA90295CB93500F3E40D /* ThirstySoftRegular.otf */; };
 		8981FA93295CB93B00F3E40D /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA92295CB93B00F3E40D /* Delm-Medium.otf */; };
 		8981FA98295CC01600F3E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8981FA96295CC01600F3E40D /* Main.storyboard */; };
-		8981FA9C295E2BFD00F3E40D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FA9B295E2BFD00F3E40D /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		8981FA90295CB93500F3E40D /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		8981FA92295CB93B00F3E40D /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		8981FA97295CC01600F3E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8981FA9B295E2BFD00F3E40D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				8981FA96295CC01600F3E40D /* Main.storyboard */,
-				8981FA9B295E2BFD00F3E40D /* GridView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,7 +172,6 @@
 			files = (
 				8981FA7D295CB8CF00F3E40D /* ViewController.swift in Sources */,
 				8981FA79295CB8CF00F3E40D /* AppDelegate.swift in Sources */,
-				8981FA9C295E2BFD00F3E40D /* GridView.swift in Sources */,
 				8981FA7B295CB8CF00F3E40D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
