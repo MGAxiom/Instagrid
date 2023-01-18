@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     
     var swipeGesture: UISwipeGestureRecognizer = UISwipeGestureRecognizer()
     
-    var isLandscape = false
+
     var isPortrait = false
     var currentGridButton: UIButton?
     
@@ -111,19 +111,17 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     func determineMyDeviceOrientation() {
         if UIDevice.current.orientation == .unknown {
             if let orientation = self.view.window?.windowScene?.interfaceOrientation {
-                isLandscape = orientation.isLandscape
                 isPortrait = orientation.isPortrait
             }
         } else {
             isPortrait = UIDevice.current.orientation.isPortrait
-            isLandscape = UIDevice.current.orientation.isLandscape
         }
         
         
         if (isPortrait) {
             swipeGesture.direction = .up
             labelSwipe.text = "Swipe up to share"
-        } else if (isLandscape) {
+        } else {
             swipeGesture.direction = .left
             labelSwipe.text = "Swipe left to share"
         }
@@ -139,7 +137,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     @objc private func swipePresetView(_ sender: UIGestureRecognizer) {
         UIView.animate(withDuration: 0.4, delay: 0.2, animations: {
             var swipeTransform = CGAffineTransform(translationX: 0, y: -self.gridView.frame.maxY)
-            if self.isLandscape {
+            if !self.isPortrait {
                 swipeTransform = CGAffineTransform(translationX: -self.gridView.frame.maxX, y: 0)
             }
             self.gridView.transform = swipeTransform
