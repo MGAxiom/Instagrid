@@ -121,11 +121,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
         
         
         if (isPortrait) {
-            //print("Device is in portrait mode")
             swipeGesture.direction = .up
             labelSwipe.text = "Swipe up to share"
         } else if (isLandscape) {
-            //print("Device is in landscape mode")
             swipeGesture.direction = .left
             labelSwipe.text = "Swipe left to share"
         }
