@@ -345,6 +345,7 @@
                     </view>
                     <connections>
                         <outlet property="gridView" destination="Y4m-wh-p5g" id="YoC-se-aCj"/>
+                        <outlet property="labelSwipe" destination="Spp-pp-9Oc" id="jmd-Wi-gun"/>
                         <outletCollection property="presetButtons" destination="f0n-uD-Sfi" collectionClass="NSMutableArray" id="JUn-Kp-Tue"/>
                         <outletCollection property="presetButtons" destination="TvK-8G-pbx" collectionClass="NSMutableArray" id="LXL-5l-Xno"/>
                         <outletCollection property="presetButtons" destination="brk-fE-8dU" collectionClass="NSMutableArray" id="gUP-Qf-ca0"/>

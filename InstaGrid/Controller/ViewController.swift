@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     @IBOutlet weak var gridView: UIView!
     @IBOutlet var presetViews: [UIView]!
     @IBOutlet var gridButtons: [UIButton]!
-
+    @IBOutlet weak var labelSwipe: UILabel!
     
     var swipeGesture: UISwipeGestureRecognizer = UISwipeGestureRecognizer()
     
@@ -123,9 +123,11 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
         if (isPortrait) {
             //print("Device is in portrait mode")
             swipeGesture.direction = .up
+            labelSwipe.text = "Swipe up to share"
         } else if (isLandscape) {
             //print("Device is in landscape mode")
             swipeGesture.direction = .left
+            labelSwipe.text = "Swipe left to share"
         }
     }
     
